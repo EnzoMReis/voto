@@ -16,4 +16,11 @@ verificar.addEventListener('click', ()=>{
 
     console.log("Instância do Objeto: ",cidadao)
 
+    let mensagem = cidadao.verificaVoto()
+
+    resposta.innerHTML = ''
+    resposta.innerHTML += `O Eleitor ${cidadao.nome} <br>`
+    resposta.innerHTML += `tem ${cidadao.idade} anos de idade <br>`
+    resposta.innerHTML += mensagem + '<br>'
+    resposta.style.color = "rgb(106, 59, 214)"
 })
